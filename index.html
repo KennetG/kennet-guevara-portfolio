@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Kennet Guevara is a computer systems engineer with specialized IAM experience, learning to create practical solutions with AI and Codex." />
+    <meta name="theme-color" content="#f2f0e9" />
+    <script>
+      (() => {
+        let preference = 'system';
+        try { preference = localStorage.getItem('kg-theme') || 'system'; } catch {}
+        if (!['system', 'light', 'dark'].includes(preference)) preference = 'system';
+        const resolved = preference === 'system'
+          ? (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light')
+          : preference;
+        document.documentElement.dataset.theme = resolved;
+        document.documentElement.dataset.themePreference = preference;
+      })();
+    </script>
+    <link rel="icon" type="image/png" sizes="32x32" href="/src/assets/favicons/kg-logo-black-32.png" media="(prefers-color-scheme: light)" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/src/assets/favicons/kg-logo-white-32.png" media="(prefers-color-scheme: dark)" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/src/assets/favicons/kg-logo-black-32.png" />
+    <title>Kennet Guevara — Systems Engineering &amp; AI</title>
+    <link rel="stylesheet" href="/src/style.css" />
+    <link rel="stylesheet" href="/src/mobile-fix.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <div id="app"></div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
