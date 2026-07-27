@@ -1,5 +1,7 @@
 import logoBlackUrl from './assets/logo/kg-logo-black-256.png';
 import logoWhiteUrl from './assets/logo/kg-logo-white-256.png';
+import heroLogoBlackUrl from './assets/logo/kg-logo-black-1024.png';
+import heroLogoWhiteUrl from './assets/logo/kg-logo-white-1024.png';
 
 const roles = [
   { dates: 'Apr 2026 — Present', title: 'CIAM Solutions Architect', company: 'Equifax', text: 'Guiding client-facing identity product migrations, delivering identity providers, and improving API workflows through automation.', tools: 'Okta · Ping Identity · Python · APIs · AI-assisted scripting' },
@@ -44,7 +46,7 @@ document.querySelector('#app').innerHTML = `
         <p>Computer systems engineer with specialized experience in identity and access management — now expanding my development practice to create practical solutions with AI and Codex.</p>
         <div class="actions"><a class="button" href="#experience">View experience <span>→</span></a><a class="text-link" href="https://www.linkedin.com/in/kennetg/" target="_blank" rel="noreferrer">LinkedIn ↗</a></div>
       </div>
-      <div class="trust-figure" aria-hidden="true"><span>FIG. 01</span><div class="target"><i></i><i></i><i></i><b></b></div><p>Systems thinking.<br>Identity expertise.<br>AI-assisted building.</p><small>REF. KG—01</small></div>
+      <div class="trust-figure"><span>KG / 01</span><div class="hero-mark"><img class="hero-logo hero-logo-light" src="${heroLogoBlackUrl}" alt="Kennet Guevara monogram" /><img class="hero-logo hero-logo-dark" src="${heroLogoWhiteUrl}" alt="Kennet Guevara monogram" /></div><p>Systems thinking.<br>Identity expertise.<br>AI-assisted building.</p><small>COSTA RICA / 2026</small></div>
     </section>
     <section class="experience indexed" id="experience">
       ${sectionRail('02', 'Experience')}
